@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صقور السماء</title>
+    <style>
+        /* تصميم الخلفية والعناصر */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* خلفية سوداء */
+            color: white;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 80px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        /* تصميم الأزرار */
+        .btn {
+            padding: 15px 60px;
+            font-size: 24px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        .btn-start {
+            background-color: #28a745; /* أخضر */
+            color: white;
+        }
+
+        .btn-thanks {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        /* تأثيرات عند مرور الفأرة */
+        .btn:hover {
+            transform: scale(1.1);
+            filter: brightness(1.2);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>صقور السماء</h1>
+
+    <button class="btn btn-start" onclick="startGame()">ابدأ اللعب</button>
+    
+    <button class="btn btn-thanks" onclick="showThanks()">اضغط لرؤية رسالة الشكر</button>
+
+    <script>
+        function startGame() {
+            alert("استعد! اللعبة ستنطلق قريباً...");
+            // هنا مستقبلاً ستضع الكود الذي ينقل المستخدم لشاشة اللعب
+        }
+
+        function showThanks() {
+            alert("شكراً لك على دعم لعبة صقور السماء! القادم أفضل.");
+        }
+    </script>
+
+</body>
+</html>
